@@ -25,3 +25,5 @@ We cannot however find a $g$, such that $x \in L_1 \leftrightarrow g(x) \in L_3$
 # 4
 ## 4a
 NPC (NP-complete) is defined as $NP \cap NPH$. If we want to prove something to be an element of NPC, we need to prove that it is a member of both sets.
+
+To prove that a problem $L$ is NP hard, we need to find a known NP hard problem $L_{NPH}$ (e.g. SAT), and show that it reduces to the problem at hand: $L_{NPH} \leq_P L$. Because of the transitivity of $\leq_P$ we only need to do this for a single problem.
