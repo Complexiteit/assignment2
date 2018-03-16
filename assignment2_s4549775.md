@@ -40,4 +40,8 @@ We refer to pre-satisfiability by the shortcut $PRE\_SAT$ in the following proof
 
 * Proof that $PRE\_SAT \in NPH$
 
+  As per the Cook-Levin theorem we know that $SAT \in NPH$. If we can find a transformation function $f$, such that $x \in SAT \leftrightarrow f(x) \in PRE\_SAT$, then $SAT \leq_P PRE\_SAT$. It follows from $SAT \in NPH$, and the transitivity of $\leq_P$ that $\forall L \in NP. L \leq_P PRE\_SAT$, which per definition means that $PRE\_SAT \in NPH$.
+
+  It follows a description of such a transformation function $f$: Given CNF $\phi$ with $n$ clauses, we make CNF $\phi'$ with $n + 2$ clauses, by adding the clauses $q$, and $\lnot q$. We know that one of these two clauses is always false, so if $\phi'$ is pre-satisfiable, then either of them must have been the only false clause in $\phi'$, so $\phi$ is satisfiable.
+
 We have shown that $PRE\_SAT \in NP$, and $PRE\_SAT \in NPH$, so per definition $PRE\_SAT \in NPC$.
