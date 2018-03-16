@@ -23,3 +23,5 @@ We can disprove this by a counterexample: Take $L_1$ = {$x \in \{0, 1\}^*$ | num
 We cannot however find a $g$, such that $x \in L_1 \leftrightarrow g(x) \in L_3$, because $L_3$ accepts all strings, but $L_1$ does reject some strings. It is therefore not possible to do anything to the strings $L_1$ rejects that would make $L_3$ reject them, so $L_1 \not \leq_P L_3$, and we have successfully disproven the theorem.
 
 # 4
+## 4a
+NPC (NP-complete) is defined as $NP \cap NPH$. If we want to prove something to be an element of NPC, we need to prove that it is a member of both sets.
