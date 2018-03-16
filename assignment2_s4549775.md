@@ -36,6 +36,8 @@ We refer to pre-satisfiability by the shortcut $PRE\_SAT$ in the following proof
 
 * Proof that $PRE\_SAT \in NP$
 
+  If we take the values for the variables in the CNF as a certificate, it is trivial to check whether at most one clause is false. This can be done by filling in the values from the certificate and using the boolean logic rules to solve every clause. If more than one false clause is encountered, return 0, else return 1.
+
 * Proof that $PRE\_SAT \in NPH$
 
 We have shown that $PRE\_SAT \in NP$, and $PRE\_SAT \in NPH$, so per definition $PRE\_SAT \in NPC$.
