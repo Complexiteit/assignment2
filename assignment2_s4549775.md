@@ -27,3 +27,5 @@ We cannot however find a $g$, such that $x \in L_1 \leftrightarrow g(x) \in L_3$
 NPC (NP-complete) is defined as $NP \cap NPH$. If we want to prove something to be an element of NPC, we need to prove that it is a member of both sets.
 
 To prove that a problem $L$ is NP hard, we need to find a known NP hard problem $L_{NPH}$ (e.g. SAT), and show that it reduces to the problem at hand: $L_{NPH} \leq_P L$. Because of the transitivity of $\leq_P$ we only need to do this for a single problem.
+
+To prove that problem $L$ is a member of $NP$, formally $L \in NP$, we need to show that a polynomial algorithm $A$ exists, such that $A(x, y) = 1 \leftrightarrow x \in L$, where $y$ is a so called "certificate" whose length in polynomial in the length of $x$.
