@@ -29,3 +29,13 @@ NPC (NP-complete) is defined as $NP \cap NPH$. If we want to prove something to 
 To prove that a problem $L$ is NP hard, we need to find a known NP hard problem $L_{NPH}$ (e.g. SAT), and show that it reduces to the problem at hand: $L_{NPH} \leq_P L$. Because of the transitivity of $\leq_P$ we only need to do this for a single problem.
 
 To prove that problem $L$ is a member of $NP$, formally $L \in NP$, we need to show that a polynomial algorithm $A$ exists, such that $A(x, y) = 1 \leftrightarrow x \in L$, where $y$ is a so called "certificate" whose length in polynomial in the length of $x$.
+
+## 4b
+
+We refer to pre-satisfiability by the shortcut $PRE\_SAT$ in the following proof.
+
+* Proof that $PRE\_SAT \in NP$
+
+* Proof that $PRE\_SAT \in NPH$
+
+We have shown that $PRE\_SAT \in NP$, and $PRE\_SAT \in NPH$, so per definition $PRE\_SAT \in NPC$.
